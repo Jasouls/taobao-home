@@ -1,0 +1,643 @@
+.container-fluid {
+  width: 100%;
+}
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.top {
+  background-color: #f5f5f5;
+}
+.top .container {
+  height: 36px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+  position: relative;
+}
+.top .container .user li {
+  float: left;
+  padding: 0 6px;
+}
+.top .container .user li a {
+  display: block;
+}
+.top .container .user li.login a {
+  color: red;
+}
+.top .container .user li:hover a {
+  color: red;
+}
+.top .container .user li.down div {
+  background-color: white;
+  color: black;
+  display: none;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  box-shadow: 0 1px 1px gray;
+  z-index: 1;
+}
+.top .container .user li.down div p {
+  padding-left: 10px;
+}
+.top .container .user li.down:hover div {
+  display: block;
+}
+.top .container .user li.down div p:hover {
+  background-color: lightgray;
+}
+.top .container .topnav li {
+  float: left;
+  padding: 0 6px;
+  position: relative;
+}
+.top .container .topnav li a {
+  display: block;
+}
+.top .container .topnav li.shopcar i {
+  font-size: 10px;
+  color: red;
+}
+.top .container .topnav li.star i {
+  font-size: 10px;
+  color: #9c9c9c;
+}
+.top .container .topnav li:hover a {
+  color: red;
+}
+.top .container .topnav li:hover a i {
+  color: red;
+}
+.top .container .topnav li.down div {
+  background-color: white;
+  color: black;
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 1px 1px gray;
+}
+.top .container .topnav li.down div p {
+  padding-left: 6px;
+}
+.top .container .topnav li.down div.all {
+  width: 1190px;
+  background-color: white;
+  height: 400px;
+  display: none;
+  position: absolute;
+  left: -1116px;
+  text-align: center;
+  line-height: 400px;
+  font-size: 30px;
+  font-weight: bold;
+  top: 36px;
+  z-index: 1;
+  box-shadow: 0 1px 1px gray;
+}
+.top .container .topnav li.down:hover div {
+  display: block;
+}
+.top .container .topnav li.down:hover {
+  background-color: white;
+}
+.top .container .topnav li.down div p:hover {
+  background-color: lightgray;
+}
+.center {
+  background-color: #eae8eb;
+  padding-bottom: 20px;
+}
+.center .head {
+  height: 121px;
+  padding-top: 24px;
+  padding-right: 110px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.center .head .logo {
+  width: 190px;
+  height: 80px;
+  text-align: center;
+}
+.center .head .logo img {
+  margin-top: 8px;
+}
+.center .head .search {
+  width: 630px;
+}
+.center .head .search .insert {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 2px;
+  margin-top: 12px;
+}
+.center .head .search .insert .baby {
+  width: 74px;
+  line-height: 36px;
+  text-align: center;
+  border-right: 1px solid lightgray;
+  font-size: 14px;
+}
+.center .head .search .insert .sear {
+  flex: 1;
+}
+.center .head .search .insert .sear input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  height: 36px;
+  font-size: 18px;
+  padding-left: 10px;
+  outline: none;
+}
+.center .head .search .insert .btn {
+  width: 74px;
+  text-align: center;
+  line-height: 36px;
+  background-color: orange;
+  border-radius: 18px;
+  font-size: 14px;
+}
+.center .head .search .fast {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 18px;
+}
+.center .head .search .fast li {
+  font-size: 12px;
+}
+.center .head .search .fast li.fasion a {
+  color: red;
+}
+.center .head .search .fast li:hover a {
+  color: red;
+}
+.center .head .jump {
+  width: 76px;
+  height: 90px;
+  background-color: white;
+  color: red;
+  text-align: center;
+  font-size: 12px;
+}
+.center .head .jump img {
+  width: 62px;
+  height: 62px;
+}
+.center .main {
+  box-sizing: border-box;
+  padding-top: 6px;
+  background-color: white;
+  border-radius: 20px;
+}
+.center .main .main-top {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.center .main .main-top .theme {
+  width: 190px;
+  text-align: center;
+  color: orangered;
+}
+.center .main .main-top .others li {
+  padding: 0 5px;
+  float: left;
+  margin: 0 4px;
+}
+.center .main .main-top .others li.mao a,
+.center .main .main-top .others li.suan a {
+  color: red;
+}
+.center .main .main-top .others li.shi a {
+  color: #00e400;
+}
+.center .main .main-top .others li a {
+  display: block;
+}
+.center .main .main-mes {
+  display: flex;
+  justify-content: space-between;
+}
+.center .main .main-mes .left {
+  width: 190px;
+  box-sizing: border-box;
+  padding-right: 4px;
+  position: relative;
+}
+.center .main .main-mes .left .left-list li {
+  line-height: 34px;
+  vertical-align: middle;
+}
+.center .main .main-mes .left .left-list li a {
+  display: block;
+  padding-left: 12px;
+  color: #666;
+}
+.center .main .main-mes .left .left-list li a span {
+  float: right;
+  color: gray;
+}
+.center .main .main-mes .left .left-list li:hover a {
+  color: red;
+  background-color: orange;
+}
+.center .main .main-mes .left .left-list li:hover a span {
+  color: red;
+}
+.center .main .main-mes .left .shopblock {
+  width: 700px;
+  height: 518px;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 190px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 518px;
+  font-weight: bold;
+  display: none;
+}
+.center .main .main-mes .left:hover .shopblock {
+  display: block;
+}
+.center .main .main-mes .center {
+  padding: 5px;
+  flex: 1;
+  background-color: white;
+}
+.center .main .main-mes .center .tops {
+  display: flex;
+  justify-content: space-between;
+}
+.center .main .main-mes .center .tops .lefts {
+  position: relative;
+  width: 520px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.center .main .main-mes .center .tops .lefts .playone {
+  position: absolute;
+}
+.center .main .main-mes .center .tops .lefts .playone li {
+  float: left;
+}
+.center .main .main-mes .center .tops .lefts .playone li img {
+  vertical-align: top;
+  height: 280px;
+}
+.center .main .main-mes .center .tops .lefts .direction a {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.center .main .main-mes .center .tops .lefts .direction a.next {
+  right: 0;
+}
+.center .main .main-mes .center .tops .lefts .line {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.center .main .main-mes .center .tops .lefts .line a {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.center .main .main-mes .center .tops .lefts .line a.active {
+  background-color: blueviolet;
+}
+.center .main .main-mes .center .tops .lefts .line a:hover {
+  background-color: blueviolet;
+}
+.center .main .main-mes .center .tops .rights {
+  width: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.center .main .main-mes .center .bottoms {
+  display: flex;
+  justify-content: space-between;
+}
+.center .main .main-mes .center .bottoms .leftstwo {
+  position: relative;
+  width: 520px;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.center .main .main-mes .center .bottoms .leftstwo .playtwo {
+  position: absolute;
+}
+.center .main .main-mes .center .bottoms .leftstwo .playtwo li {
+  float: left;
+  font-size: 0;
+}
+.center .main .main-mes .center .bottoms .leftstwo .playtwo li img {
+  vertical-align: top;
+  height: 190px;
+  width: 260px;
+}
+.center .main .main-mes .center .bottoms .leftstwo .directiontwo a {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  background-color: #0affff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.center .main .main-mes .center .bottoms .leftstwo .directiontwo a.nexttwo {
+  right: 0;
+}
+.center .main .main-mes .center .bottoms .rights {
+  height: 190px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.center .main .main-mes .right {
+  width: 290px;
+}
+.center .main .main-mes .right .user {
+  text-align: center;
+}
+.center .main .main-mes .right .user .headphoto {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: orange;
+  margin: 10px auto;
+}
+.center .main .main-mes .right .user p {
+  font-size: 12px;
+}
+.center .main .main-mes .right .user span {
+  background-color: #5e5e5e;
+  border-radius: 4px;
+  font-size: 12px;
+  color: red;
+}
+.center .main .main-mes .right .submit {
+  display: flex;
+  justify-content: space-around;
+  width: 240px;
+  margin: 0 auto;
+}
+.center .main .main-mes .right .submit div {
+  background-color: orange;
+  padding: 3px 20px;
+  border-radius: 5px;
+}
+.center .main .main-mes .right img {
+  display: block;
+  width: 100%;
+}
+.center .main .main-mes .right .others {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+.center .main .main-mes .right .others li a {
+  line-height: 40px;
+}
+.center .main .main-mes .right .others li:first-child a {
+  border-bottom: 2px solid orange;
+}
+.center .main .main-mes .right .gaoshi {
+  font-size: 13px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.center .main .main-mes .right .special {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center .main .main-mes .right .special li {
+  width: 25%;
+  flex-shrink: 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+}
+.center .main .main-mes .right .special li i {
+  font-size: 32px;
+  color: blueviolet;
+  line-height: 50px;
+}
+.center .main .main-mes .right .special li div {
+  color: #ff6600;
+  line-height: 30px;
+}
+.center .main .main-mes .right .aliapp {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.center .main .main-mes .right .aliapp .more {
+  font-size: 14px;
+  font-weight: 0;
+}
+.center .main .main-mes .right .aliapp .more:hover {
+  color: orange;
+}
+.center .main .main-mes .right .app {
+  display: flex;
+  justify-content: space-evenly;
+}
+.center .main .main-mes .right .app li img {
+  width: 30px;
+}
+.center .main .hasgood {
+  margin-top: 20px;
+}
+.center .main .hasgood h2 {
+  font-size: 24px;
+  line-height: 56px;
+}
+.center .main .hasgood h2 span {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #129ff6;
+  color: white;
+  border-radius: 4px;
+  font-weight: normal;
+}
+.center .main .hasgood .item {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.center .main .hasgood .item li {
+  width: 215px;
+  line-height: 26px;
+}
+.center .main .hasgood .item li img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.center .main .hasgood .item li .mes {
+  font-size: 16px;
+  color: #999;
+}
+.center .main .newpro {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.center .main .newpro img {
+  width: 375px;
+  border-radius: 10px;
+}
+.center .main .youlike {
+  margin-top: 20px;
+}
+.center .main .youlike h2 {
+  font-size: 24px;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+.center .main .youlike h2 span {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: orange;
+  color: white;
+  border-radius: 4px;
+  font-weight: normal;
+}
+.center .main .youlike .value {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.center .main .youlike .value li {
+  width: 215px;
+  line-height: 22px;
+}
+.center .main .youlike .value li img {
+  width: 100%;
+  border-radius: 10px;
+}
+.center .main .youlike .value li .price {
+  font-size: 20px;
+  color: red;
+}
+.center .main .youlike .value li .price span {
+  font-size: 14px;
+  color: #999;
+  line-height: 40px;
+}
+.center .main .end {
+  color: #666;
+}
+.center .main .end p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 100px;
+}
+.center .main .server {
+  margin-top: 10px;
+}
+.center .main .server ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.center .main .server ul li {
+  width: 180px;
+}
+.center .main .server ul li div {
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+.center .main .server ul li div i {
+  font-size: 40px;
+}
+.center .main .server ul li div span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-64%);
+}
+.foot .otherweb ul {
+  display: flex;
+  margin: 10px 0;
+}
+.foot .otherweb ul li {
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
+}
+.foot .root ul {
+  display: flex;
+}
+.foot .root ul li {
+  float: left;
+  font-size: 12px;
+  margin: 5px 3px;
+}
+.foot .root ul div {
+  font-size: 12px;
+  margin: 5px 10px;
+  color: #666;
+}
+#div1 {
+  width: 50px;
+  height: 200px;
+  font-size: 18px;
+  text-align: center;
+  background-color: orange;
+  position: absolute;
+  right: 300px;
+  top: 0;
+}
+#div1 ul li:hover {
+  background-color: white;
+}
+/*# sourceMappingURL=./taobao.css.map */
