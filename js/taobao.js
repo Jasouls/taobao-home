@@ -1,4 +1,6 @@
 window.onload = function(){
+
+    //轮播图1
     const oDiv = document.querySelector(".lefts")
     const oUl = document.querySelector(".playone")
     const aLis = oUl.querySelectorAll("li")
@@ -62,7 +64,7 @@ window.onload = function(){
 
 
 
-
+    //轮播图2
     const oDivtwo = document.querySelector(".leftstwo")
     const oUltwo = document.querySelector(".playtwo")
     const aListwo = oUltwo.querySelectorAll("li")
@@ -109,7 +111,7 @@ window.onload = function(){
 
 
 
-
+    //缓冲运动
     var div1 = document.getElementById("div1")
     var windowHeight = document.documentElement.clientHeight || document.body.clientHeight
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
